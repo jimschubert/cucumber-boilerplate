@@ -19,6 +19,25 @@ dependencies](https://github.com/webdriverio/cucumber-boilerplate/blob/master/pa
 from the [package.json](https://github.com/webdriverio/cucumber-boilerplate/blob/master/package.json#L26-L30)
 file and you are all set.
 
+To run the example code in this repository, first install and start selenium:
+
+```
+$ npm install selenium-standalone@latest -g
+$ selenium-standalone install
+$ selenium-standalone start
+```
+
+**NOTE** Selenium requires Java to be in your PATH. If you have errors with the above commands, verify and/or install Java.
+
+Next, in another terminal window, install dependencies and run the tests:
+
+```
+$ npm install
+$ npm test
+```
+
+When tests are completed, you can stop the selenium server.
+
 ## Features
 
 - Super simple setup
@@ -55,7 +74,7 @@ Scenario: Another test
 
 ```
 
-This test opens the browser and navigates them to google.com to check if the title contains the search 
+This test opens the browser and navigates them to google.com to check if the title contains the search
 query after doing a search. As you can see, it is pretty simple and understandable for everyone.
 
 # How to run the test
@@ -148,7 +167,7 @@ module.exports = function(dict) {
     // ... other predefined snippets
     // ...
     // ...
-    
+
     /**
      * my check username in header snippet
      */
@@ -279,6 +298,3 @@ Checkout all predefined snippets. You can find the way how they get used in [`sa
 Please fork, add specs, and send pull requests! In lieu of a formal styleguide, take care to maintain the existing coding style.
 Currently not all [WebdriverIO](http://webdriver.io/) commands are mapped and implemented as snippets. Any contribution that
 adds new snippets + test are highly welcome.
-
-
-
